@@ -1,0 +1,131 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 2 auto;
+	padding: 0;
+	}
+
+body { 
+    font-family: monospace;
+	line-height: 2;
+	color: #35ba2e; 
+    background-color: black;
+	}
+  
+  /* Class Name Selector */
+  .main.supporting {
+    background-color: #000;
+    color: #0F0;
+  }
+  
+  /* ID Name Selector */
+  #zen-intro {
+    background: #000 url('matrix-background.jpg') no-repeat center center;
+    color: #0F0;
+  }
+  
+  /* Child Selector */
+  .sidebar > .wrapper {
+    border: 1px solid #0F0;
+    padding: 10px;
+  }
+  
+  /* Descendant Selector */
+  #zen-explanation p {
+    color: #0F0;
+  }
+  
+  /* :nth-child Selector */
+  ul li:nth-child(odd) {
+    background: #000;
+  }
+  
+  ul li:nth-child(even) {
+    background: #00F;
+    color: #0F0;
+  }
+  
+  /* Attribute Selector */
+  a[title="This page's sample CSS, the file you may modify."] {
+    color: #F00;
+  }
+    
+  /* First-of-Type Selector */
+  li:first-of-type {
+    font-weight: bold;
+  }
+  
+  /* Last-of-Type Selector */
+  li:last-of-type {
+    font-style: italic;
+  }
+  
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #7ac4eb;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #aa78e3;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #e678b0;
+	}
+
+/* Basic styling for the sidebar container */
+.sidebar {
+    background-color: #000;
+    color: #00FF00;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .sidebar h3 {
+    color: #00FF00;
+  }
+  
+  .sidebar a {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #0F0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .select, .archives {
+    font-size: 18px;
+  }
+  
+  .resources {
+    font-size: 18px;
+    color: #0F0;
+  }
+  
+  /* :before selector */
+  .sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 5px, #00FF00 5px, #00FF00 10px);
+    opacity: 0.1; /* Adjust the opacity as needed */
+    pointer-events: none;
+  }
+  
